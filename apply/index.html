@@ -17,8 +17,21 @@ title: Shuttleworth Foundation - Applications
   <div class="container">
     <div class="twelve columns u-text-center">
       <i class="icon-notification"></i><br/>
-      Applications for the {{ site.intake.current }} fellowship intake
-      are {% if site.intake.open %}open{% else %}closed{% endif %}. The application round will close on 14 May 2017.
+      {% if site.intake.open %}
+
+      <p>
+	Applications for the {{ site.intake.current }} fellowship
+	intake are open. The application round will close on 14 May 2017.
+      </p>
+
+      {% else %}
+
+      <p>
+	Applications for the {{ site.intake.current }} fellowship intake are now
+	closed. Thank you for your submissions, we will be in touch.
+      </p>
+
+      {% endif %}
     </div>
   </div>
 </div>
